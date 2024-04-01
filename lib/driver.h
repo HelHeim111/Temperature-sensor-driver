@@ -5,8 +5,6 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-static uint32_t device_register = 0;
-
 #define TSR_DATA_MASK       0xFF
 #define TSR_DATA(x)         ((uint32_t)(x < 0 ? (uint32_t)(x & TSR_DATA_MASK) : (uint32_t)(x)) | (device_register & (~TSR_DATA_MASK)))
 #define TSR_PWR_MASK        0x100

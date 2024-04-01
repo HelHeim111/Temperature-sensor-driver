@@ -1,5 +1,7 @@
 #include "../lib/driver.h"
 
+static uint32_t device_register = 0;
+
 void device_init() {
     device_register = TSR_DATA(0b0);
     device_register = TSR_ERR(0b00);
