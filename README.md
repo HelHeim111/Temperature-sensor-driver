@@ -12,24 +12,26 @@
 This document outlines the implementation details and specifications for the mock temperature sensor device driver. The driver simulates reading data from the register as well as writing mock values to the register. The driver is developed in the C programming language and utilizes the Unity test framework for testing.
 
 ## **Project Structure**
+```
 Temperature-sensor-driver/  
 │  
-├── src/                  # Source files directory  
+├── src/                    # Source files directory  
 │   └── driver.c            # Main source file  
 │  
-├── tests/                # Test files directory  
+├── tests/                  # Test files directory  
 │   ├── test_driver.c       # Main test file  
 |   ├── unity_internals.h
 │   ├── unity.c   
 |   └── unity.h 
 │  
-├── lib/                  # Header files directory  
-│   └── driver.h   # Header file for the temperature sensor driver  
+├── lib/                   # Header files directory  
+│   └── driver.h           # Header file for the temperature sensor driver  
 │  
-├── build/                # Build directory (object files, executables)  
+├── build/                 # Build directory (object files, executables)  
 │  
-├── Makefile              # Makefile for building the project  
+├── Makefile               # Makefile for building the project  
 ├── README.md  
+```
 
 ## **Usage**
 To run the temperature sensor driver and its tests, follow these steps:
